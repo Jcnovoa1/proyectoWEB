@@ -1,0 +1,56 @@
+:root {
+    --color-principal: #0d6efd;
+    --color-oscuro: #212529;
+    --fuente-base: 'Inter', system-ui, sans-serif;
+    --transicion: all 0.3s ease;
+}
+
+body {
+    font-family: var(--fuente-base);
+    color: var(--color-oscuro);
+    background-color: #f8f9fa;
+}
+
+h1, h3 {
+    letter-spacing: -0.5px;
+}
+
+.card {
+    border: none;
+    transition: var(--transicion);
+    border-radius: 12px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+
+.btn-primary {
+    background-color: var(--color-principal);
+    border-radius: 8px;
+    padding: 0.8rem 1.5rem;
+    font-weight: 600;
+}
+
+.navbar {
+    padding: 1rem 0;
+}
+
+.img-fluid {
+    transition: var(--transicion);
+}
+
+@media (max-width: 991px) {
+    .display-4 {
+        font-size: 2.5rem;
+    }
+    
+    main {
+        text-align: center;
+    }
+    
+    .justify-content-md-start {
+        justify-content: center !important;
+    }
+}
